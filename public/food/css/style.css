@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  color: #333;
+}
+
+header {
+  height: 70px;
+  position: fixed;
+  z-index: 999;
+}
+
+header .container {
+  position: fixed;
+  width: 100%;
+}
+
+header h1 {
+  display: inline-block;
+  float: left;
+  padding: 15px 24px;
+  text-transform: uppercase;
+  padding-left: 3%;
+}
+
+header h1 a {
+  transition: .3s;
+}
+
+header ul {
+  float: right;
+}
+
+header ul a li {
+  padding: 24px;
+  display: inline-block;
+}
+
+header ul a li {
+  transition: .3s;
+  color: #f9f9f9;
+
+}
+
+header ul a li:hover {
+  color: #c29533;
+}
+
+a {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.mobile-menu {
+  float: right;
+  display: none;
+  padding: 18px;
+}
+
+.mobile-menu:hover {
+  cursor: pointer;
+}
+
+#check {
+  display: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: -300px;
+  width: 300px;
+  background-color: rgba(62, 68, 75, 0.9);
+  transition: .3s;
+  z-index: 9999;
+}
+
+.sidebar ul a li {
+  color: #fff;
+}
+
+.sidebar ul a li {
+  padding: 24px;
+  transition: .3s;
+  transition-property: background-color;
+}
+
+.sidebar ul a li:hover {
+  background-color: #448cda;
+}
+
+#check:checked~.sidebar {
+  left: 0;
+}
+
+.banner{
+  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/fooood.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20% 0;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.banner img {
+  width: 45%;
+  float: right;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #12457a;
+}
+
+.banner h2,
+.banner p,
+.banner span,
+.banner h1 {
+  font-family: 'Courgette', cursive;
+  color: #fff;
+}
+
+.banner h1 {
+  font-size: 1000%;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 5px #333;
+}
+
+.banner-left {
+  padding-left: 24px;
+}
+
+section h3 {
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+section h3::before {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 120px;
+  height: 1px;
+  background-color: #ddd;
+  left: calc(50% - 60px);
+}
+
+section h3::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  width: 40px;
+  height: 4px;
+  background-color: #12457a;
+  left: calc(50% - 20px);
+}
+
+#about .item {
+  width: 100%
+}
+
+#about .container {
+  display: flex;
+  flex-wrap: wrap;
+  /* padding: 5% 10%; */
+  text-align: center;
+}
+
+#about .container .item{
+  flex: 0 50%;
+  /*demo*/
+  /* border: red solid; */
+  padding: 0 5%;
+  padding-bottom: 5%;
+  box-sizing:border-box;
+}
+
+#about{
+  padding: 5% 5%;
+}
+
+#about img {
+  width: 80%;
+  margin: 5%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #7d8a99;
+}
+
+.textbox{
+  width: 50%;
+}
+
+#about p {
+  text-align: justify;
+  text-indent: 3%;
+  /* text-indent: 30px; */
+  line-height: 25px;
+  margin-bottom: 15px;
+  padding: 0 10%;
+}
+
+#skills,
+#contact {
+  background-color: #f9f9f9;
+}
+
+#skills .bar {
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 5px 0 20px 0;
+}
+
+.bar .nilai {
+  height: 30px;
+  background-color: #448cda;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+}
+
+.programming {
+  width: 90%;
+}
+
+.laravel {
+  width: 30%;
+}
+
+.codeigniter {
+  width: 45%;
+}
+
+.php {
+  width: 50%;
+}
+
+.cpp {
+  width: 85%;
+}
+
+.col-4 {
+  width: 25%;
+  box-sizing: border-box;
+  padding: 5px;
+  float: left;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.col-4 img {
+  width: 100%;
+}
+
+.col-4 a:hover img {
+  transform: scale(1.2);
+}
+
+.col-3 {
+  width: 33.33%;
+  box-sizing: border-box;
+  float: left;
+  text-align: center;
+  padding: 50px 10px;
+}
+
+.col-3 h4 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+
+footer {
+  background-color: #333;
+  padding: 50px;
+  text-align: center;
+}
+
+footer small {
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+      display: block;
+  }
+  .mobile-menu div {
+      width: 35px;
+      height: 5px;
+      background-color: rgb(255, 255, 255);
+      margin: 6px 0;
+  }
+  header ul {
+      display: none;
+  }
+  .col-4 {
+      width: 50%;
+  }
+  .col-3 {
+      width: 100%;
+  }
+}
