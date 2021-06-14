@@ -103,26 +103,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
   </section>
 
-  <section id="contact">
-    <div class="container">
-      <h3>Contact</h3>
-      <div class="col-3">
-        <h4>Address</h4>
-        <p>Perumahan Kebon jeruk Elok Blok A, No. 4, RT. 10, Kel. Solok Sipin, Kec. Danau Sipin, Kota Jambi</p>
-      </div>
-
-      <div class="col-3">
-        <h4>Email</h4>
-        <p>dafaberlian123@gmail.com</p>
-      </div>
-
-      <div class="col-3">
-        <h4>Call</h4>
-        <p>+62 813 2216 8022</p>
-      </div>
-    </div>
-  </section>
-
   <footer>
     <div class="container">
       <small>Copyright &copy; 2020 - Dafa Berlian.</small>
