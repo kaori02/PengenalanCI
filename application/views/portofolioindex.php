@@ -52,22 +52,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </section>
 
   <section id="about">
-      <div class="container">
-        <img src=<?= base_url("public/hometown/img/tugu_pers.jpg")?> alt="tugu pers">
-        <div class="textbox">
-          <h1>About My Hometown</h1>
-          <br>
-          <p>Hi, Let me introduce you to my lovely hometown! </p>
-        </div>
-      </div>
+		<?php foreach ($portofolios as $portofolio): ?>
 			<div class="container">
-        <img src=<?= base_url("public/hometown/img/tugu_pers.jpg")?> alt="tugu pers">
+				<a target="blank" href="<?= base_url('public/upload/portofolio/'.$portofolio->portofolio_pic) ?>"><img src="<?= base_url('public/upload/portofolio/'.$portofolio->portofolio_pic) ?>" width="40" /> </a>
         <div class="textbox">
-          <h1>About My Hometown</h1>
+          <h1><?= $portofolio->portofolio_name ?></h1>
+					<small><?= $portofolio->portofolio_date ?></small>
           <br>
-          <p>Hi, Let me introduce you to my lovely hometown! </p>
+          <p><?= $portofolio->portofolio_desc ?></p>
         </div>
       </div>
+		<?php endforeach; ?>
   </section>
 
   <footer>
