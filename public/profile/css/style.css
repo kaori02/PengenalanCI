@@ -6,7 +6,8 @@
 }
 
 header {
-  height: 70px;
+  /* height: 70px; */
+  width: 100%;
   position: fixed;
   z-index: 999;
 }
@@ -28,6 +29,10 @@ header h1 a {
   transition: .3s;
 }
 
+header h1 a:hover{
+	color: #f9f9f9;
+}
+
 header ul {
   float: right;
 }
@@ -44,7 +49,7 @@ header ul a li {
 }
 
 header ul a li:hover {
-  color: #6eb4ff;
+  color: #c29533;
 }
 
 a {
@@ -83,7 +88,7 @@ a {
   bottom: 0;
   left: -300px;
   width: 300px;
-  background-color: rgba(16, 47, 80, .9);
+  background-color: rgba(62, 68, 75, 0.9);
   transition: .3s;
   z-index: 9999;
 }
@@ -107,7 +112,13 @@ a {
 }
 
 .banner {
-  background-color: #1F68B6;
+  /* background-color: #1F68B6; */
+	position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../img/dafa.jpg");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 8% 0;
 }
 

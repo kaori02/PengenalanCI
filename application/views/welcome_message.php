@@ -18,10 +18,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <input type="checkbox" id="check">
   <div class="sidebar">
     <ul>
-      <a href="profile/"><li>Profile</li></a>
-      <a href="hometown/"><li>Hometown</li></a>
-      <a href="food/"><li>Food</li></a>
-      <a href="tourist/"><li>Tourist</li></a>
+      <a href=<?= base_url("index.php/about/")?>><li>About</li></a>
+      <a href=<?= base_url("index.php/contact/")?>><li>Contact</li></a>
     </ul>
   </div>
 
@@ -29,10 +27,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container-fluid">
       <h1><a href=".">DAFA BERLIAN</a></h1>
       <ul>
-        <a href="profile/"><li>Profile</li></a>
-        <a href="hometown/"><li>Hometown</li></a>
-        <a href="food/"><li>Food</li></a>
-        <a href="tourist/"><li>Tourist</li></a>
+        <a href=<?= base_url("index.php/about/")?>><li>About</li></a>
+        <a href=<?= base_url("index.php/contact/")?>><li>Contact</li></a>
       </ul>
 
       <label for="check" class="mobile-menu">
@@ -51,30 +47,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
   </section>
 
-  <section id="contact">
-    <div class="container">
-      <h3>My Contact</h3>
-      <div class="col-3">
-        <h4>Address</h4>
-        <p>Perumahan Kebon jeruk Elok Blok A, No. 4, RT. 10, Kel. Solok Sipin, Kec. Danau Sipin, Kota Jambi</p>
-      </div>
-
-      <div class="col-3">
-        <h4>Email</h4>
-        <p>dafaberlian123@gmail.com</p>
-      </div>
-
-      <div class="col-3">
-        <h4>Call</h4>
-        <p>+62 813 2216 8022</p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
+  <!-- <footer>
     <div class="container">
       <small>Copyright &copy; 2020 - Dafa Berlian.</small>
     </div>
-  </footer>
+  </footer> -->
 </body>
 </html>
