@@ -97,7 +97,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <section class="cv">
     <h3>Get my CV right here!</h3>
     <div class="vertical-center">
-      <a href="uploads/CV R Dafa Berlian Denmar with GPA.pdf" download="uploads/CV R Dafa Berlian Denmar with GPA.pdf">
+      <a href=<?= base_url("public/profile/uploads/CV.pdf")?> download=<?php base_url("public/profile/uploads/CV.pdf")?>>
         <img src=<?= base_url("public/profile/uploads/cvLogo.gif")?> alt="logo CV">
       </a>
     </div>
