@@ -8,16 +8,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Portfolio - Dafa Berlian</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href=<?= base_url("public/img/favicon.ico")?> type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href=<?= base_url("public/hometown/css/style.css")?>>
   <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
 	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
-	<script src="https://use.fontawesome.com/9f04ecd84f.js"></script>
 </head>
 
 <body>
@@ -60,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!-- DataTables -->
 				<div class="card mb-3">
 					<div class="card-header">
-						<a href="<?= base_url('admin/portofolios/add') ?>" class="btn btn-primary btn-block">Add New</a>
+						<a href="<?= base_url('admin/portofolios/add') ?>" class="btn btn-primary">Add New</a>
 					</div>
 					<div class="card-body">
 
@@ -91,8 +90,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<td class="small">
 											<?= substr($portofolio->portofolio_desc, 0, 120) ?>...</td>
 										<td width="250">
-											<a href="<?= base_url('admin/portofolios/edit/'.$portofolio->portofolio_id) ?>" class="btn btn-warning btn-block">Edit</a>
-											<a onclick="deleteConfirm('<?php echo site_url('admin/portofolios/delete/'.$portofolio->portofolio_id) ?>')" href="#!" class="btn btn-danger btn-block">Delete</a>
+											<a href="<?= base_url('admin/portofolios/edit/'.$portofolio->portofolio_id) ?>" class="btn btn-warning">Edit</a>
+											<a onclick="deleteConfirm('<?= site_url('admin/portofolios/delete/'.$portofolio->portofolio_id) ?>')" href="#!" class="btn btn-danger">Delete</a>
 										</td>
 									</tr>
 									<?php endforeach; ?>
@@ -118,10 +117,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel">Are you sure?</h5>
 					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">×</span>
+						<span aria-hidden="true">&times;</span>
 					</button>
 				</div>
-				<div class="modal-body">Data yang dihapus tidak akan bisa dikembalikan.</div>
+				<div class="modal-body">
+					<p>This action cannot be undone</p>
+				</div>
 				<div class="modal-footer">
 					<button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
 					<a id="btn-delete" class="btn btn-danger" href="#">Delete</a>
