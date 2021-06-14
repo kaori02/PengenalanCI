@@ -65,46 +65,50 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 				</div>
 				<div class="card-body">
-					<form action="<?= site_url('admin/portofolios/add') ?>" method="post" enctype="multipart/form-data" >
-						
-						<div class="form-group">
-							<label for="portofolio_name">Name <span style="color: red;">*</span></label>
-							<input class="form-control <?php echo form_error('portofolio_name') ? 'is-invalid':'' ?>"
-							type="text" name="portofolio_name" placeholder="Portofolio Name" />
-							<div class="invalid-feedback">
-								<?php echo form_error('portofolio_name') ?>
-							</div>
-						</div>
+				<form action="" method="post" enctype="multipart/form-data">
+						<!-- Note: atribut action dikosongkan, artinya action-nya akan diproses 
+							oleh controller tempat vuew ini digunakan. Yakni index.php/admin/portofolios/edit/ID --->
 
-						<div class="form-group">
-							<label for="portofolio_date">Date <span style="color: red;">*</span></label>
-							<input class="form-control <?php echo form_error('portofolio_date') ? 'is-invalid':'' ?>"
-							type="date" name="portofolio_date" placeholder="Portofolio Date" />
-							<div class="invalid-feedback">
-								<?php echo form_error('portofolio_date') ?>
-							</div>
-						</div>
+							<input type="hidden" name="portofolio_id" value="<?php echo $portofolio->portofolio_id?>" />
 
-						<div class="form-group">
-							<label for="portofolio_desc">Description <span style="color: red;">*</span></label>
-							<textarea class="form-control <?php echo form_error('portofolio_desc') ? 'is-invalid':'' ?>"
-							name="portofolio_desc" placeholder="Portofolio description..."></textarea>
-							<div class="invalid-feedback">
-								<?php echo form_error('portofolio_desc') ?>
+							<div class="form-group">
+								<label for="portofolio_name">Name <span style="color: red;">*</span></label>
+								<input class="form-control <?php echo form_error('portofolio_name') ? 'is-invalid':'' ?>"
+								 type="text" name="portofolio_name" placeholder="Portofolio Name" value="<?php echo $portofolio->portofolio_name?>" />
+								<div class="invalid-feedback">
+									<?php echo form_error('portofolio_name') ?>
+								</div>
 							</div>
-						</div>
 
-						<div class="form-group">
-							<label for="portofolio_pic">Certificate Picture</label>
-							<input class="form-control-file <?php echo form_error('portofolio_pic') ? 'is-invalid':'' ?>"
-							type="file" name="portofolio_pic" />
-							<div class="invalid-feedback">
-								<?php echo form_error('portofolio_pic') ?>
+							<div class="form-group">
+								<label for="portofolio_date">Date <span style="color: red;">*</span></label>
+								<input class="form-control <?php echo form_error('portofolio_date') ? 'is-invalid':'' ?>"
+								 type="date" name="portofolio_date" value="<?php echo $portofolio->portofolio_date ?>" />
+								<div class="invalid-feedback">
+									<?php echo form_error('portofolio_date') ?>
+								</div>
 							</div>
-						</div>
 
-						<input class="btn btn-success" type="submit" name="btn" value="Save" />
-					</form>
+							<div class="form-group">
+								<label for="portofolio_desc">Description <span style="color: red;">*</span></label>
+								<textarea class="form-control <?php echo form_error('portofolio_desc') ? 'is-invalid':'' ?>"
+								 name="portofolio_desc" placeholder="Portofolio description..."><?php echo $portofolio->portofolio_desc ?></textarea>
+								<div class="invalid-feedback">
+									<?php echo form_error('portofolio_desc') ?>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="portofolio_pic">Certificate Picture</label>
+								<input class="form-control-file <?php echo form_error('portofolio_pic') ? 'is-invalid':'' ?>"
+								 type="file" name="portofolio_pic" />
+								<input type="hidden" name="old_image" value="<?php echo $portofolio->portofolio_pic ?>" />
+								<div class="invalid-feedback">
+									<?php echo form_error('portofolio_pic') ?>
+								</div>
+							</div>
+							<input class="btn btn-success" type="submit" name="btn" value="Save" />
+						</form>
 
 				</div>
 

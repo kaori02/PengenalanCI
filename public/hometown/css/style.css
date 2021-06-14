@@ -130,7 +130,7 @@ section {
   width: 45%;
   float: right;
   border-radius: 10px;
-  box-shadow: 10px 10px 10px #12457a;
+  /* box-shadow: 10px 10px 10px #12457a; */
 }
 
 .banner h2,
@@ -189,7 +189,7 @@ section h3::after {
   width: 45%;
   float: right;
   border-radius: 10px;
-  box-shadow: 10px 10px 10px #7d8a99;
+  /* box-shadow: 10px 10px 10px #7d8a99; */
 }
 
 .textbox{
@@ -312,4 +312,8 @@ html {
   .col-3 {
       width: 100%;
   }
+}
+
+.form-group{
+	padding: 1% 0;
 }

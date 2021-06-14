@@ -56,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </section>
 
   <section id="about">
-      <div class="container">
+      <div class="container-fluid">
         <!-- DataTables -->
 				<div class="card mb-3">
 					<div class="card-header">
@@ -85,7 +85,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<?= $portofolio->portofolio_date ?>
 										</td>
 										<td>
-											<img src="<?= base_url('public/upload/portofolio/'.$portofolio->portofolio_pic) ?>" width="64" />
+											<a target="blank" href="<?= base_url('public/upload/portofolio/'.$portofolio->portofolio_pic) ?>"><img src="<?= base_url('public/upload/portofolio/'.$portofolio->portofolio_pic) ?>" width="80" /> </a>
+
 										</td>
 										<td class="small">
 											<?= substr($portofolio->portofolio_desc, 0, 120) ?>...</td>
