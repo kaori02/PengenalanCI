@@ -6,7 +6,8 @@
 }
 
 header {
-  height: 70px;
+  /* height: 70px; */
+	width: 100%;
   position: fixed;
   z-index: 999;
 }
@@ -28,6 +29,9 @@ header h1 a {
   transition: .3s;
 }
 
+header h1 a:hover{
+	color: #f9f9f9;
+}
 header ul {
   float: right;
 }
@@ -44,7 +48,7 @@ header ul a li {
 }
 
 header ul a li:hover {
-  color: #86b9f0;
+  color: #c29533;
 }
 
 a {
@@ -53,8 +57,9 @@ a {
 }
 
 .container {
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
+	padding: 2.5% 0;
 }
 
 .container::after {
@@ -83,7 +88,7 @@ a {
   bottom: 0;
   left: -300px;
   width: 300px;
-  background-color: rgba(16, 47, 80, 0.9);
+  background-color: rgba(62, 68, 75, 0.9);
   transition: .3s;
   z-index: 9999;
 }
@@ -107,13 +112,14 @@ a {
 }
 
 .banner{
-  position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url("../img/gentala.jpg");
-  height: 100%;
+  /* background-color: #1F68B6; */
+	position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../../img/dafa.jpg");
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 20% 0;
+  padding: 8% 0;
 }
 
 section {

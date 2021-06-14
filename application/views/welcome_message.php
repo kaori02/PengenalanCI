@@ -18,8 +18,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <input type="checkbox" id="check">
   <div class="sidebar">
     <ul>
-      <a href=<?= base_url("index.php/about/")?>><li>About</li></a>
-      <a href=<?= base_url("index.php/contact/")?>><li>Contact</li></a>
+      <a href=<?= base_url("about/")?>><li>About</li></a>
+      <a href=<?= base_url("contact/")?>><li>Contact</li></a>
+			<a href=<?= base_url("portofolioindex/")?>><li>Portfolio</li></a>
     </ul>
   </div>
 
@@ -27,8 +28,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container-fluid">
       <h1><a href=".">DAFA BERLIAN</a></h1>
       <ul>
-        <a href=<?= base_url("index.php/about/")?>><li>About</li></a>
-        <a href=<?= base_url("index.php/contact/")?>><li>Contact</li></a>
+        <a href=<?= base_url("about/")?>><li>About</li></a>
+        <a href=<?= base_url("contact/")?>><li>Contact</li></a>
+				<a href=<?= base_url("portofolioindex/")?>><li>Portfolio</li></a>
       </ul>
 
       <label for="check" class="mobile-menu">

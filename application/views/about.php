@@ -7,7 +7,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Profile - Dafa Berlian</title>
+  <title>About - Dafa Berlian</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <link rel="shortcut icon" href=<?= base_url("public/img/favicon.ico")?> type="image/x-icon" />
@@ -19,8 +19,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <input type="checkbox" id="check">
   <div class="sidebar">
     <ul>
-			<a href=<?= base_url("index.php/about/")?>><li>About</li></a>
-      <a href=<?= base_url("index.php/contact/")?>><li>Contact</li></a>
+			<a href=<?= base_url("about/")?>><li>About</li></a>
+      <a href=<?= base_url("contact/")?>><li>Contact</li></a>
+			<a href=<?= base_url("portofolioindex/")?>><li>Portfolio</li></a>
     </ul>
   </div>
 
@@ -28,8 +29,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container-fluid">
       <h1><a href=<?= base_url("/")?>>DAFA BERLIAN</a></h1>
       <ul>
-				<a href=<?= base_url("index.php/about/")?>><li>About</li></a>
-				<a href=<?= base_url("index.php/contact/")?>><li>Contact</li></a>
+				<a href=<?= base_url("about/")?>><li>About</li></a>
+				<a href=<?= base_url("contact/")?>><li>Contact</li></a>
+				<a href=<?= base_url("portofolioindex/")?>><li>Portfolio</li></a>
       </ul>
 
       <label for="check" class="mobile-menu">

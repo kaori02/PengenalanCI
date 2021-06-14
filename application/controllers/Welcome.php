@@ -18,6 +18,13 @@ class Welcome extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	public function __construct()
+	{
+		parent::__construct();
+		$this->load->model("Portofolio_model");
+		$this->load->library('form_validation');
+	}
+
 	public function index()
 	{
 		$this->load->view('welcome_message');
@@ -33,5 +40,12 @@ class Welcome extends CI_Controller {
 	{
 		// fungsi untuk me-load view contact.php
 		$this->load->view('contact');
+	}
+
+	public function portofolioindex()
+	{
+		// fungsi untuk me-load data.php
+		$data["portofolios"] = $this->Portofolio_model->getAll();
+		$this->load->view('portofolioindex', $data);
 	}
 }

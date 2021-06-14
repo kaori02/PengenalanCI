@@ -55,3 +55,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['about'] = 'welcome/about';
 $route['contact'] = 'welcome/contact';
+$route['portofolioindex'] = 'welcome/portofolioindex';
+
+$route['portofolio'] = 'portofolios/index';
